@@ -1,0 +1,71 @@
+.projects {
+    color: #fff;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    gap: 12px;
+}
+.filter-options::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-option {
+    border: none;
+    border-radius: 50rem;
+    padding: 8px 16px;
+    min-width: auto;
+    color: var(--black);
+    flex-shrink: 0;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+    margin: 16px 0 40px;
+    background-color: var(--light-gray);
+}
+.filter-option:focus {
+    background-color: var(--light-gray);
+}
+
+.filter-options .selected {
+    background-color: var(--black) !important;
+    color: #fff;
+}
+
+.projects-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 186px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, .4);
+}
+.project-title {
+    font-size: 1.75rem;
+    margin: 24px 0 16px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+button.access-btn {
+    text-transform: capitalize;
+}
+.access-btn img {
+    vertical-align: top;
+    width: 18px;
+}
+.tertiary-btn img {
+    vertical-align: text-top;
+    width: 24px;
+    margin-right: 4px;
+}

@@ -1,0 +1,92 @@
+
+.above-the-fold {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    /* margin-bottom: 7.5rem; */
+}
+
+
+h2[class$=-title-line] {
+    font-size: clamp(1.85rem, 4vw + 1rem, 3.8rem);
+    font-weight: lighter;
+    margin: 0;
+}
+.first-title-line {
+    color: var(--light-gray);
+}
+.second-title-line {
+    display: inline-block;
+    background-color: var(--yellow);
+}
+
+.brief-description {
+    color: var(--light-gray);
+    margin-top: 24px;
+    max-width: 30rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin: 32px 0 40px;
+}
+
+.accent {
+    font-weight: 500;
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    max-width: 24rem;
+    color: var(--light-gray);
+}
+.achievement {
+    font-size: .9rem;
+    width: 25%;
+    /* replace here, it shouldn't be hard-coded */
+    color: rgba(246, 246, 246, .75);
+}
+.achievement .number {
+    font-size: 2rem;
+    color: var(--light-gray);
+}
+.vertical-divider {
+    width: 1px;
+    background-color: var(--light-gray);
+    opacity: 30%;
+}
+.image-area {
+    display: none;
+}
+
+@media only screen and (min-width: 56.875rem) {
+    .content-area {
+        flex-basis: 63%;
+    }
+
+    .image-area {
+        flex-basis: 37%;
+    }
+    .image-area {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-area .image {
+        border-radius: 50%;
+        background: url(../../assets/images/businessman-png-transparent-businessman-images-34.png) no-repeat;
+        background-color: var(--bg-color-1);
+        background-size: 256px;
+        background-position: left 50% top 0%;
+    
+        --size: 30vw;
+        width: clamp(1rem, var(--size), 24.375rem);
+        height: clamp(1rem, var(--size), 24.375rem);
+    }
+}

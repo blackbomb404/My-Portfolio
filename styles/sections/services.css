@@ -1,0 +1,44 @@
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.services .service {
+    width: 100%;
+    min-height: 240px;
+    border-radius: 8px;
+    background-color: var(--bg-color-1);
+    position: relative;
+    padding: 0 24px;
+    display: flex;
+    /* justify-content: stretch; */
+    align-items: center;
+}
+.service .icon {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    width: 56px;
+    height: 76px;
+    background-color: var(--yellow);
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service .icon img {
+    width: 48px;
+}
+.service-info {
+    flex-basis: 80%;
+}
+.service-name {
+    color: var(--light-gray);
+    font-size: 1.6rem;
+    margin: 0 0 8px;
+    line-height: 2.2rem;
+    max-width: 80%;
+}
+.amount-of-projects-completed {
+    color: rgba(246, 246, 246, .5);
+}

@@ -1,0 +1,28 @@
+header {
+    padding: 16px;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+/* ################################# HAMBURGER MENU */
+.hamburger-menu {
+    width: 32px;
+}
+.hamburger-line {
+    display: block;
+    height: 4px;
+    background-color: var(--dark-gray);
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+.hamburger-line:nth-child(3) {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+.language-options .selected {
+    font-weight: bold;
+    color: var(--darker-gray);
+}
