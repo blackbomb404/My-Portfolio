@@ -6,6 +6,7 @@
 @import url(sections/services.css);
 @import url(sections/projects.css);
 @import url(sections/testimonials.css);
+@import url(sections/contact.css);
 
 * {
     padding: 0;
@@ -15,6 +16,7 @@
 
 html, body {
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,6 +44,17 @@ main {
     font-size: 2rem;
     text-align: center;
     margin: 0 0 40px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+.show {
+    opacity: 1;
 }
 
 @media only screen and (min-width: 53.75rem) {

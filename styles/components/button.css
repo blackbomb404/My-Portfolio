@@ -3,7 +3,7 @@
     border-radius: 50rem;
     color: var(--black);
     border: none;
-    padding: 8px 18px;
+    padding: 8px 24px;
     background-color: var(--yellow);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
     text-transform: uppercase;
@@ -32,7 +32,7 @@
     color: var(--light-gray);
     border: none;
     padding: 8px;
-    background-color: rgba(21, 63, 179, .3) !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+    background-color: rgba(21, 63, 179, .6) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
     font-size: 1.1rem;
 }

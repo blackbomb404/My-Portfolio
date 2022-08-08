@@ -1,0 +1,59 @@
+.columns-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.contact .info-label {
+    color: rgba(246, 246, 246, .7);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.contact .info-value {
+    color: var(--light-gray);
+    font-size: 1.4rem;
+}
+.contact .info-icon {
+    width: 32px;
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+.contact .info-value.email,
+.contact .info-value.linkedin {
+    font-size: 1.15rem;
+    word-break: break-all;
+}
+
+.flex-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+.contact .form {
+    flex-basis: 100%;
+} 
+.contact form {
+    width: 100%;
+}
+.contact textarea {
+    background-color: var(--light-gray);
+    border: none;
+    color: var(--black);
+    outline: none;
+    padding: 16px;
+    border-radius: 8px;
+    height: 280px;
+    margin-bottom: 16px;
+}
+
+.contact .form button img {
+    margin-right: 8px;
+    vertical-align: text-top;
+}
+.contact .form label {
+    display: block;
+}

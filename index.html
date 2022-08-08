@@ -8,6 +8,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/index.css">
     <title>Document</title>
 </head>
@@ -175,16 +177,86 @@
         </section>
         <section class="testimonials">
             <h1 class="title">Testimonials</h1>
-            <img class="testimonial-photo" src="/assets/images/happy-random-beard-talking.jpg" alt="testimonial photo">
-            <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing
-                and typesetting industry. Lorem Ipsum has been
-                the industry's standard dumy text ever since the
-                1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but
-                also the leap into electronic typesetting, remaining
-                essentially unchanged.</p>
-            <p class="testimonial-author">John Doe, CEO at NoWhere</p>
+            <div class="carousel carousel-slider center">
+                <div class="carousel-item" href="#one!">
+                        <img class="testimonial-photo" src="assets/images/happy-random-beard-talking.jpg" alt="testimonial photo">
+                        <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dumy text ever since the
+                            1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but
+                            also the leap into electronic typesetting, remaining
+                            essentially unchanged.</p>
+                        <p class="testimonial-author">John Doe, CEO at NoWhere</p>
+                </div>
+                <div class="carousel-item" href="#two!">
+                        <img class="testimonial-photo" src="assets/images/cafe_girl.jpg" alt="testimonial-photo">
+                        <p class="testimonial-text">
+                            No matter where you go, DevHome is the coolest, most happening thing
+                            around! We were treated like royalty.</p>
+                        <p class="testimonial-author">Delcina H., Developer at NoWhere</p>
+                </div>
+                <div class="carousel-item" href="#three!">
+                    <img class="testimonial-photo" src="assets/images/sun-glass-guy.jpg" alt="testimonial-photo">
+                    <p class="testimonial-text">
+                        This is unbelievable. After using Testiminial Generator my buisness skyrocketed!
+                    </p>
+                    <p class="testimonial-author">Rick E., Project Manager at NoWhere</p>
+                </div>
+                <div class="carousel-item" href="#four!">
+                    <img class="testimonial-photo" src="assets/images/blonde-hair-woman.jpg" alt="testimonial-photo">
+                    <p class="testimonial-text">
+                        Very easy to use. DevHome was worth a fortune to my company.
+                        I would also like to say thank you to all your staff. Dude, your
+                        stuff is the bomb!
+                    </p>
+                    <p class="testimonial-author">Nanci J., Software Tester at NoWhere</p>
+                </div>
+              </div>
+        </section>
+        <section class="contact">
+            <h1 class="title">Contact me</h1>
+            <section class="columns-wrapper">
+                <div class="column information">
+                    <div class="info">
+                        <p class="info-label">Call me</p>
+                        <img class="info-icon" src="assets/icons/whatsapp.png" alt="whatsapp-icon">
+                        <span class="info-value">+244 928 212 586</span>
+                    </div>
+
+                    <div class="info">
+                        <p class="info-label">Send me an email</p>
+                        <div class="flex-wrapper">
+                            <img class="info-icon" src="assets/icons/email.png" alt="email-icon">
+                            <span class="info-value email">leonel.nascimento96@gmail.com</span>
+                        </div>
+                        <div class="flex-wrapper">
+                            <img class="info-icon" src="assets/icons/email.png" alt="email-icon">
+                            <span class="info-value email">leonel-nascimento@hotmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <p class="info-label">Find me on LinkedIn</p>
+                        <div class="flex-wrapper">
+                            <img class="info-icon" src="assets/icons/linkedin.png" alt="email-icon">
+                            <span class="info-value linkedin">https://www.linkedin.com/in/leonel-nascimento-b3427891/</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column form">
+                    <form action="" method="POST">
+                        <label class="info-label" for="textarea">Send me a message from here</label>
+                        <textarea name="message" id="textarea"></textarea>
+                        <button type="button" class="waves-effect accent">
+                            <img src="assets/icons/send-black.png">Send</button>
+                    </form>
+                </div>
+            </section>
+            <a class="btn-floating btn-large waves-effect waves-light indigo darken-4 back-to-top">
+                <i class="material-icons">arrow_upward</i>
+            </a>
         </section>
     </main>
 

@@ -1,6 +1,6 @@
 .testimonial-photo {
     --size: 164px;
-    width: var(--size);
+    width: var(--size) !important;
     height: var(--size);
     border-radius: 50%;
     display: block;
@@ -24,4 +24,20 @@
     font-style: italic;
     font-weight: 600;
     color: var(--light-gray);
+}
+.carousel {
+    height: auto !important;
+    min-height: 100%;
+}
+.carousel.carousel-slider
+.carousel-item {
+    padding: 0 8px 12px;
+}
+
+.carousel.carousel-slider
+.carousel-item.active {
+    position: relative;
+}
+.carousel .indicators {
+    position: static;
 }
