@@ -2,13 +2,15 @@
 .above-the-fold {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1150px;
+    max-width: 1200px;
     /* margin-bottom: 7.5rem; */
+    /* margin: 0 auto; */
+    /* width: 60%; */
 }
 
 
 h2[class$=-title-line] {
-    font-size: clamp(1.85rem, 4vw + 1rem, 3.8rem);
+    font-size: clamp(1.5rem, 3.4vw + 1rem, 3.4rem);
     font-weight: lighter;
     margin: 0;
 }
@@ -71,6 +73,7 @@ h2[class$=-title-line] {
     .image-area {
         flex-basis: 37%;
     }
+
     .image-area {
         display: block;
         display: flex;
@@ -89,4 +92,25 @@ h2[class$=-title-line] {
         width: clamp(1rem, var(--size), 24.375rem);
         height: clamp(1rem, var(--size), 24.375rem);
     }
+}
+
+@media only screen and (min-width: 60rem) {
+    /* .image-area {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-area .image {
+        border-radius: 50%;
+        background: url(../../assets/images/businessman-png-transparent-businessman-images-34.png) no-repeat;
+        background-color: var(--bg-color-1);
+        background-size: 256px;
+        background-position: left 50% top 0%;
+    
+        --size: 30vw;
+        width: clamp(1rem, var(--size), 24.375rem);
+        height: clamp(1rem, var(--size), 24.375rem);
+    } */
 }
