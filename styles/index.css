@@ -12,14 +12,11 @@
 
 @font-face {
     font-family: 'langdonregular';
-    src: url('langdon-webfont.woff2') format('woff2'),
-         url('langdon-webfont.woff') format('woff');
+    src: url('https://blackbomb404.github.io/My-Portfolio/assets/fonts/langdon-webfont.woff2') format('woff2'),
+         url('https://blackbomb404.github.io/My-Portfolio/assets/fonts/langdon-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
 
 
 * {
@@ -43,7 +40,6 @@ body {
 header {
     position: sticky;
     top: 0;
-    /* width: 100%; */
     z-index: 2;
 }
 
@@ -57,7 +53,7 @@ main {
 }
 
 .title {
-    font-family: 'Langdon', Arial, Helvetica, sans-serif;
+    font-family: 'langdonregular', Arial, Helvetica, sans-serif;
 }
 
 .above-the-fold ~ * > .title {
