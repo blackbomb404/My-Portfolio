@@ -14,21 +14,50 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="hamburger-menu">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-        </div>
-        <img src="#" alt="LOGO">
+  <ul id="slide-out" class="sidenav">
+    <li><a class="waves-effect" href="#about-me"><img class="sidenav-icon about-me-icon" src="assets/icons/information.png">About me</a></li>
+    <li><div class="divider first-group"></div></li>
+    <li><a class="waves-effect" href="#services"><img class="sidenav-icon services-icon" src="assets/icons/guy-coding.png">Services</a></li>
+    <li><div class="divider first-group"></div></li>
+    <li><a class="waves-effect" href="#projects"><img class="sidenav-icon projects-icon" src="assets/icons/pencil.png">Projects</a></li>
+    <li><div class="divider first-group"></div></li>
+    <li><a class="waves-effect" href="#testimonials"><img class="sidenav-icon testimonials-icon" src="assets/icons/testimonial.png">Testimonials</a></li>
+    <li><div class="divider first-group"></div></li>
+    <li><a class="waves-effect" href="#contact-me"><img class="sidenav-icon contact-me-icon" src="assets/icons/chat.png">Contact Me</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="assets/CV.pdf" download><img class="sidenav-icon" src="assets/icons/download.png">Download CV</a></li>
+  </ul>
+  <header>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <div class="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </a>
+        <!-- <img src="#" alt="LOGO"> -->
+        <ul id="nav-menu">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+        <a href="assets/CV.pdf" class="download-cv waves-effect waves-light" download>Download CV</a>
         <div class="language-options">
             <span class="selected">ENG</span>
             | <span>PT</span>
         </div>
     </header>
 
+    <div class="row">
+        <div class="col hide-on-small-only m3 l2" style="position: fixed; top: 56px; right: 0;">
+          
+        </div>
+      </div>
+
     <main>
-        <div class="above-the-fold">
+        <div id="about-me" class="above-the-fold section scrollspy">
             <section class="content-area">
                 <h2 class="title first-title-line">Hi, i'm leonel and i'm a</h2>
                 <h2 class="title second-title-line">Full stack web developer</h2>
@@ -67,7 +96,7 @@
                 <div class="image"></div>
             </section>
         </div>
-        <section class="services">
+        <section id="services" class="services section scrollspy">
             <h1 class="title">Services i offer</h1>
             <div class="services-wrapper">
                 <article class="service">
@@ -112,7 +141,7 @@
             </div>
             
         </section>
-        <section class="projects">
+        <section id="projects" class="projects section scrollspy">
             <h1 class="title">My projects</h1>
             <section class="filter-options">
                 <button type="button" class="waves-effect filter-option selected">All (3)</button type="button">
@@ -191,7 +220,7 @@
                 </article>
             </section>
         </section>
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials section scrollspy">
             <h1 class="title">Testimonials</h1>
             <div class="carousel carousel-slider center">
                 <div class="carousel-item" href="#one!">
@@ -231,34 +260,50 @@
                 </div>
               </div>
         </section>
-        <section class="contact">
+        <section id="contact-me" class="contact section scrollspy">
             <h1 class="title">Contact me</h1>
             <section class="columns-wrapper">
                 <div class="column information">
                     <div class="info">
                         <p class="info-label">Call me</p>
-                        <img class="info-icon" src="assets/icons/whatsapp.png" alt="whatsapp-icon">
-                        <span class="info-value">+244 928 212 586</span>
+                        <div class="info-values">
+                            <div class="flex-wrapper">
+                                <img class="info-icon" src="assets/icons/whatsapp.png" alt="whatsapp-icon">
+                                <span class="info-value">+244 928 212 586</span>
+                            </div>
+                            <div class="flex-wrapper">
+                                <img class="info-icon" src="assets/icons/whatsapp.png" alt="whatsapp-icon">
+                                <span class="info-value">+244 954 760 210</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="info">
                         <p class="info-label">Send me an email</p>
-                        <div class="flex-wrapper">
-                            <img class="info-icon" src="assets/icons/email.png" alt="email-icon">
-                            <span class="info-value email">leonel.nascimento96@gmail.com</span>
-                        </div>
-                        <div class="flex-wrapper">
-                            <img class="info-icon" src="assets/icons/email.png" alt="email-icon">
-                            <span class="info-value email">leonel-nascimento@hotmail.com</span>
+                        <div class="info-values">
+                            <div class="flex-wrapper">
+                                <img class="info-icon" src="assets/icons/email.png" alt="email-icon">
+                                <span class="info-value email">leonel.nascimento96@gmail.com</span>
+                            </div>
+                            <div class="flex-wrapper">
+                                <img class="info-icon" src="assets/icons/email.png" alt="email-icon">
+                                <span class="info-value email">leonel-nascimento@hotmail.com</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="info">
-                        <p class="info-label">Find me on LinkedIn</p>
-                        <div class="flex-wrapper">
-                            <img class="info-icon" src="assets/icons/linkedin.png" alt="email-icon">
-                            <span class="info-value linkedin">https://www.linkedin.com/in/leonel-nascimento-b3427891/</span>
-                        </div>
+                        <a class="info-label linkedin" href="https://www.linkedin.com/in/leonel-nascimento-b3427891/" target="_blank">
+                            <img class="info-icon" src="assets/icons/linkedin.png" alt="linkedin-icon">
+                            Find me on LinkedIn
+                        </a>
+                    </div>
+
+                    <div class="info">
+                        <a class="info-label github" href="https://github.com/blackbomb404" target="_blank">
+                            <img class="info-icon" src="assets/icons/github.png" alt="github-icon">
+                            Check my GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="column form">

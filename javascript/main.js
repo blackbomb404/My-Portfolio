@@ -1,5 +1,6 @@
 const filterOptions = document.querySelector('.projects .filter-options');
 let carouselInstance;
+let sideNavInstance;
 
 filterOptions.addEventListener('click', e => {
     const t = e.target;
@@ -30,6 +31,36 @@ window.addEventListener('scroll', e => {
 backToTop.addEventListener('click', () => {
     window.scrollTo(0, 0);
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    const elem = document.querySelector('.sidenav');
+    sideNavInstance = M.Sidenav.init(elem, {
+        edge: 'left',
+        draggable: true
+    });
+    sideNavInstance.el.addEventListener('click', e => {
+        if(e.target.tagName === 'A'){
+            sideNavInstance.close();
+        }
+    })
+  });
+
+let scrollSpyInstances;
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    scrollSpyInstances = M.ScrollSpy.init(elems, {
+        scrollOffset: 100
+    });
+  });
+
+
+// document.querySelector('.section.table-of-contents')
+//     .addEventListener('click', e => {
+//         if(e.target.tagName === 'A') {
+//             // alert(e.target.textContent)
+//             alert(scrollSpyInstances.getActiveElement());
+//         }
+//     })
 
 // function resizeTab(){
 //     let maxHeight = 0;
