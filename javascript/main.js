@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener('scroll', e => {
-    if(window.scrollY >= 2048)
+    if(window.scrollY >= 768)
         backToTop.classList.add('show');
     else
         backToTop.classList.remove('show');
@@ -52,27 +52,3 @@ let scrollSpyInstances;
         scrollOffset: 100
     });
   });
-
-
-// document.querySelector('.section.table-of-contents')
-//     .addEventListener('click', e => {
-//         if(e.target.tagName === 'A') {
-//             // alert(e.target.textContent)
-//             alert(scrollSpyInstances.getActiveElement());
-//         }
-//     })
-
-// function resizeTab(){
-//     let maxHeight = 0;
-//     const carouselItems = document.querySelectorAll('.carousel-item');
-
-//     let currentItemHeight;
-//     carouselItems.forEach(item => {
-//         currentItemHeight = getComputedStyle(item).height;
-//         currentItemHeight = currentItemHeight.substring(0, currentItemHeight.indexOf('px'));
-//         if(currentItemHeight > maxHeight)
-//             maxHeight = parseInt(currentItemHeight); 
-//     });
-
-//     document.querySelector('.carousel').style.height = maxHeight + 'px';
-// }

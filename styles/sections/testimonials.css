@@ -33,6 +33,7 @@
 .carousel {
     height: auto !important;
     min-height: 100%;
+    max-width: 600px;
 }
 .carousel.carousel-slider
 .carousel-item {
