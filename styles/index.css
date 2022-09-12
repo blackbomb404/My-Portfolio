@@ -37,12 +37,6 @@ body {
     background-repeat: no-repeat;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
 main {
     display: block;
     width: 90%;
@@ -130,5 +124,9 @@ main {
     #nav-menu li a {
         color: var(--dark-gray);
         font-weight: 700;
+    }
+
+    .download-cv {
+        display: inline-block;
     }
 }

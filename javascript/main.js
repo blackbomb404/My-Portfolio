@@ -52,3 +52,6 @@ let scrollSpyInstances;
         scrollOffset: 100
     });
   });
+
+
+document.querySelector('#contact-me form button[type=button]') .onclick = () => alert('Not yet implemented...')

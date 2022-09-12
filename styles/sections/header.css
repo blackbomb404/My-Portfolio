@@ -5,6 +5,9 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 /* ################################# HAMBURGER MENU */
@@ -26,4 +29,12 @@ header {
 .language-options .selected {
     font-weight: bold;
     color: var(--darker-gray);
+}
+
+@media only screen and (min-width: 51rem){
+    div.wrapper {
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+    }
 }
