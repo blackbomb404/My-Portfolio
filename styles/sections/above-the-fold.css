@@ -1,16 +1,18 @@
 
 .above-the-fold {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     max-width: 1200px;
     /* margin-bottom: 7.5rem; */
-    /* margin: 0 auto; */
+    margin: 0 auto;
     /* width: 60%; */
+    /* border: 1px solid lightgray; */
+    column-gap: 64px;
 }
 
 
 h2[class$=-title-line] {
-    font-size: clamp(1.5rem, 3.4vw + 1rem, 3.4rem);
+    font-size: clamp(1.5rem, 3.3vw + .9rem, 3.4rem);
     font-weight: lighter;
     margin: 0;
 }

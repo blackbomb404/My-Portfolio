@@ -4,7 +4,7 @@
 
 .filter-options {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     overflow-x: auto;
     gap: 24px;

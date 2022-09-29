@@ -1,0 +1,16 @@
+[
+    {
+        "title": "R.U.C.A",
+        "description": "Scientific Universal Repository for Angola, a web app that stores academic content, solved tests, monographies and more, all from Angola's Universities.",
+        "tags": [
+            "Web Design", "HTML & CSS", "JavaScript"
+        ]
+    },
+    {
+        "title": "Sabor Caseiro",
+        "description": "An online store for the selling of sweets and pastries.",
+        "tags": [
+            "Web Design", "HTML & CSS", "Angular"
+        ]
+    }
+]

@@ -30,6 +30,9 @@ header {
     font-weight: bold;
     color: var(--darker-gray);
 }
+.language-options a {
+    color: var(--dark-gray)
+}
 
 @media only screen and (min-width: 51rem){
     div.wrapper {

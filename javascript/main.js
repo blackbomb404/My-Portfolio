@@ -9,17 +9,17 @@ filterOptions.addEventListener('click', e => {
         t.classList.add('selected');
     }
 })
-document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel');
-    carouselInstance = M.Carousel.init(carousel, {
-        fullWidth: true,
-        indicators: true,
-        noWrap: true,
-        // onCycleTo: resizeTab
-    });
+// document.addEventListener('DOMContentLoaded', function() {
+//     const carousel = document.querySelector('.carousel');
+//     carouselInstance = M.Carousel.init(carousel, {
+//         fullWidth: true,
+//         indicators: true,
+//         noWrap: true,
+//         // onCycleTo: resizeTab
+//     });
     
-    // resizeTab();
-});
+//     // resizeTab();
+// });
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener('scroll', e => {
     if(window.scrollY >= 768)
@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
             sideNavInstance.close();
         }
     })
+
+    fetch('https://github.com/blackbomb404/My-Portfolio/tree/main/assets/data/projects.json')
+    .then(data => data.json())
+    .then(console.log)
   });
 
 let scrollSpyInstances;
